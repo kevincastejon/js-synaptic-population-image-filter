@@ -4,7 +4,7 @@ An live usage example of the neural-evolving-population deep learning library fo
 
 ## Online Demo
 
-[Online demo : https://yellow-vest-deep-learning-ia.herokuapp.com/](https://yellow-vest-deep-learning-ia.herokuapp.com/)
+[Online demo : https://neural-evolving-population-img.herokuapp.com/](https://neural-evolving-population-img.herokuapp.com/)
 
 ## Installation
 

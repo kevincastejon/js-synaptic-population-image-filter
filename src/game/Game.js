@@ -11,7 +11,7 @@ import Button from './Button';
 export default class Game extends PIXI.Container {
   constructor() {
     super();
-    Jimp.read('./imageSourceSm2.png').then((img) => {
+    Jimp.read('./imageSourceSm.png').then((img) => {
       this.jimpImage = img;
       this.negButton = new Button('Negative filter');
       this.sepiaButton = new Button('Sepia filter');
@@ -122,6 +122,15 @@ export default class Game extends PIXI.Container {
     Promise.all(this.ias.map(ia => ia.tryToFilter(this.correctOutputs))).then(() => {
       this.generation += 1;
       this.generationText.text = `Generation ${this.generation}`;
+      let mutationCap = false;
+      this.ias.concat().sort((a, b) => a.brain.fitness < b.brain.fitness).forEach((ia) => {
+        if (ia.brain.fitness >= 0.9) {
+          mutationCap = true;
+        }
+      });
+      if (mutationCap) {
+        this.population.mutateRate = 0.1;
+      }
       this.population.evolve();
       for (let i = 0; i < this.ias.length; i += 1) {
         this.ias[i].giveRank(i);
