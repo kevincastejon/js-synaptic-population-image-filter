@@ -1,0 +1,48 @@
+{
+  "name": "neural-evolving-population-image-filter",
+  "description": "An evolving neural network teaching yellow vests protesters to get french president Macron! Un réseau de neurones évolutif apprenant aux gilets jaunes à aller chercher Macron!",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.13.0",
+    "jimp": "^0.6.4",
+    "neural-evolving-population": "^1.2.0",
+    "pixi.js": "^5.0.3",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-bootstrap": "^1.0.0-beta.9",
+    "react-dom": "^16.8.6",
+    "react-notifications-component": "^1.1.1",
+    "react-scripts": "3.0.1",
+    "synaptic": "^1.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "main": "index.js",
+  "author": "lepioo",
+  "license": "ISC"
+}

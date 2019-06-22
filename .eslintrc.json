@@ -1,0 +1,13 @@
+{
+    "env":{
+      "browser": true,
+      "node": true
+    },
+    "extends": "airbnb",
+    "rules":{
+      "no-bitwise":"off",
+      "no-loop-func":"off",
+      "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+      "no-await-in-loop": "off"
+    }
+}
