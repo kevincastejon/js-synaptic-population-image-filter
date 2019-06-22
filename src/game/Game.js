@@ -122,20 +122,10 @@ export default class Game extends PIXI.Container {
     Promise.all(this.ias.map(ia => ia.tryToFilter(this.correctOutputs))).then(() => {
       this.generation += 1;
       this.generationText.text = `Generation ${this.generation}`;
-      let mutationCap = false;
-      this.ias.concat().sort((a, b) => a.brain.fitness < b.brain.fitness).forEach((ia) => {
-        if (ia.brain.fitness >= 0.9) {
-          mutationCap = true;
-        }
-      });
-      if (mutationCap) {
-        this.population.mutateRate = 0.01;
-      }
       this.population.evolve();
       for (let i = 0; i < this.ias.length; i += 1) {
         this.ias[i].giveRank(i);
         this.ias[i].brain = this.population.getBrain(i);
-        // this.ias[i].setScore(this.ias[i].brain.fitness);
       }
       setTimeout(() => {
         this.startIAFiltering();
