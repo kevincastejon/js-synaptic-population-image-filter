@@ -1,5 +1,5 @@
 import * as PIXI from 'pixi.js';
-import Population from 'neural-evolving-population';
+import Population from 'synaptic-population';
 import Jimp from 'jimp';
 import Globals from '../Globals';
 import IA from './IA';
@@ -50,7 +50,6 @@ export default class Game extends PIXI.Container {
         inputs: 3,
         outputs: 3,
       });
-      this.population.start();
       this.ias = [];
       for (let i = 0; i < this.population.demography; i += 1) {
         this.ias.push(new IA(this.population.getBrain(i)));

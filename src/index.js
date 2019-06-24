@@ -15,20 +15,13 @@ const app = new PIXI.Application({
 let game = null;
 
 function resizeHandler() {
-  // const canvasHolder = document.getElementById('canvasHolder');
-  // const offsetH = window.innerHeight - canvasHolder.offsetTop;
-  const scaleFactor = Math.min(
-    window.innerWidth / Globals.WIDTH,
-    window.innerHeight / Globals.HEIGHT,
-  );
-  const newWidth = Math.ceil(Globals.WIDTH * scaleFactor);
-  const newHeight = Math.ceil(Globals.HEIGHT * scaleFactor);
-
-  app.renderer.view.style.width = `${newWidth}px`;
-  app.renderer.view.style.height = `${newHeight}px`;
-
-  app.renderer.resize(newWidth, newHeight);
-  game.scale.set(scaleFactor);
+  const scaleFactor = (window.innerWidth / window.innerHeight) > (Globals.WIDTH / Globals.HEIGHT)
+    ? window.innerHeight / Globals.HEIGHT
+    : window.innerWidth / Globals.WIDTH;
+  app.view.style.left = `${window.innerWidth / 2 - (Globals.WIDTH * scaleFactor) / 2}px`;
+  app.view.style.top = `${window.innerHeight / 2 - (Globals.HEIGHT * scaleFactor) / 2}px`;
+  app.view.style.width = `${Globals.WIDTH * scaleFactor}px`;
+  app.view.style.height = `${Globals.HEIGHT * scaleFactor}px`;
 }
 
 app.loader.add('ia', 'ia.png')
@@ -43,7 +36,7 @@ app.loader.add('ia', 'ia.png')
     app.view.id = 'gameCanvas';
     app.view.style.position = 'absolute';
     app.stage.addChild(game);
-    document.getElementById('canvasHolder').appendChild(app.view);
+    document.body.appendChild(app.view);
     window.addEventListener('resize', resizeHandler);
     resizeHandler();
   });

@@ -17,7 +17,7 @@ export default class Actor extends PIXI.Container {
   }
 
   setScore(score) {
-    this.scoreText.text = `${Number.parseFloat(score, 10).toFixed(2).toString()} %`;
+    this.scoreText.text = `${Number.parseInt(score * 100, 10).toString()} %`;
   }
 
   updateImage(newJimpImage) {

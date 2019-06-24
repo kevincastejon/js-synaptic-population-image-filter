@@ -1,15 +1,15 @@
-# neural-evolving-population-image-filter
+# js-synaptic-population-image-filter
 
-An live usage example of the neural-evolving-population deep learning library for filtering images
+A live demonstration of using synaptic-population library to try to make IA learn to apply filters on images.
 
 ## Online Demo
 
-[Online demo : https://neural-evolving-population-img.herokuapp.com/](https://neural-evolving-population-img.herokuapp.com/)
+[Online demo : https://github.com/kevincastejon/js-synaptic-population-image-filter](https://github.com/kevincastejon/js-synaptic-population-image-filter)
 
 ## Installation
 
 ```bash
-git clone https://github.com/lePioo/neural-evolving-population-image-filter
+git clone https://github.com/kevincastejon/js-synaptic-population-image-filter.git
 cd neural-evolving-population-image-filter
 npm i
 ```

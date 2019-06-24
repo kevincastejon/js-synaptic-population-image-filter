@@ -1,6 +1,6 @@
 {
-  "name": "neural-evolving-population-image-filter",
-  "description": "An evolving neural network teaching yellow vests protesters to get french president Macron! Un réseau de neurones évolutif apprenant aux gilets jaunes à aller chercher Macron!",
+  "name": "synaptic-population-image-filter",
+  "description": "A live demonstration of using synaptic-population library to try to make IA learn to apply filters on images",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
@@ -11,7 +11,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.13.0",
     "jimp": "^0.6.4",
-    "neural-evolving-population": "^1.2.0",
+    "synaptic-population": "^1.3.0",
     "pixi.js": "^5.0.3",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
@@ -43,6 +43,26 @@
     ]
   },
   "main": "index.js",
-  "author": "lepioo",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevincastejon/js-synaptic-population-image-filter.git"
+  },
+  "keywords": [
+    "deep",
+    "learning",
+    "synaptic",
+    "population",
+    "IA",
+    "AI",
+    "filter",
+    "image",
+    "learn",
+    "evolution"
+  ],
+  "author": "kevincastejon",
+  "bugs": {
+    "url": "https://github.com/kevincastejon/js-synaptic-population-image-filter/issues"
+  },
+  "homepage": "https://github.com/kevincastejon/js-synaptic-population-image-filter#readme"
 }
