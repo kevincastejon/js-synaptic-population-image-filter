@@ -4,7 +4,7 @@ A live demonstration of using synaptic-population library to try to make IA lear
 
 ## Online Demo
 
-[Online demo : https://github.com/kevincastejon/js-synaptic-population-image-filter](https://github.com/kevincastejon/js-synaptic-population-image-filter)
+[Online demo : https://synaptic-population-img-filter.herokuapp.com/](https://synaptic-population-img-filter.herokuapp.com/)
 
 ## Installation
 
