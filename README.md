@@ -1,6 +1,6 @@
 # js-synaptic-population-image-filter
 
-A live demonstration of using synaptic-population library to try to make IA learn to apply filters on images.
+A live demonstration of using [synaptic-population](https://github.com/kevincastejon/js-synaptic-population) library to try to make IA learn to apply filters on images.
 
 ## Online Demo
 
